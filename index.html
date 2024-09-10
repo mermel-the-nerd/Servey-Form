@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Ice Cream Form</title>
+</head>
+<body>
+	<div id="intro">
+		<h1 id="title">Ice Cream</h1>
+		<p id="description">yes. this is a form about ice cream. deal with it</p>
+	</div>
+	<div id="survey-form">
+		<form id="survey-form" 	>
+			<div id="info">
+				<label id="name-label" for="name" >Name:
+				<input type="text" id="name" class="info" required placeholder="Matthew Mak">
+				</label>
+				<br>
+				<br>
+				<label id="email-label" for="email" >Email:
+					<input type="email" id="email" class="info" required placeholder="makattack@gmail.com">
+				</label>
+				<br>
+				<br>
+				<label id="number-label" for="number" >Age:
+					<input type="number" id="number" min="7" max="45" placeholder="17" class="info">
+				</label>
+			</div>
+			<div id="type">
+			<p>"What kind of frozen treat do you prefer?</p>
+				<label for="ice-cream">
+					<input id="ice-cream" type="radio" name="type" value="ice-cream">Ice Cream
+				</label>
+				<label for="gelato">
+					<input id="gelato" type="radio" name="type" value="gelato">Gelato
+				</label>
+				<label for="sorbet">
+					<input id="sorbet" type="radio"name="type" value="sorbet">Sorbet
+				</label>
+				<label for="froyo">
+					<input id="froyo" type="radio"name="type" value="froyo">Frozen Yogurt
+				</label>
+			</div>
+			<div id="flavor">
+				<p>Whats your favorite flavor of ice cream?</p>
+					<select name="fav-flavor" id="dropdown"required>
+						<option value="select">Select one</option>
+						<option value="vanilla">Vanilla</option>
+						<option value="chocolate">Chocolate</option>
+						<option value="strawberry">Strawberry</option>
+						<option value="lemon">Lemon</option>
+						<option value="mango">Mango</option>
+						<option value="caramel">Caramel</option>
+						<option value="coffee">Coffee</option>
+					</select>
+			</div>
+			<div id="toppings">
+				<p>What toppings do you like on your ice cream?</p>
+				<label>
+					<input name="topping" type="checkbox" value="sprinkles">Sprinkles
+				</label>
+				<br>
+				<label>
+					<input type="checkbox"name="topping"value="coconuts">Shredded Coconut
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" name="topping"value="marshmallow">Mini Marshmallows
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" name="topping"value="banana">Bananas
+				</label><br>
+				<label>
+					<input type="checkbox" name="topping"value="stawberry">Strawberries
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" name="topping"value="choc-syrup">Chocolate Syrup
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" name="topping"value="caramel">Caramel Sauce
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" name="topping"value="nuts">Nuts
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" name="topping"value="choc-chips">Chocolate Chips
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" name="topping"value="fruit">Other Fruit
+				</label>
+				<p>Any other toppings that aren't on the list?</p>
+				<textarea  id="more-toppings" placeholder="Add more toppings here"></textarea>
+			</div>
+			<br>
+			<button type="submit" id="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
